@@ -1,0 +1,14 @@
+@media (min-width: 1024px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, "fr");
+    gap: 2rem;
+  }
+
+  .container {
+    margin-top: 5rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
