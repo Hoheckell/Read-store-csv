@@ -3,7 +3,7 @@ import {IUser} from '../../api/interfaces/user.interface';
 import * as mapper from './mapper';
 import { CreateUserDTO, UpdateUserDTO, FilterUserDTO } from '../../api/dto/user.dto';
 
-export const create = async(payload: CreateUserDTO): Promise<IUser> => {
+export const create = async(payload: CreateUserDTO): Promise<IUser> => {    
     return mapper.toUser(await service.create(payload))
 }
 export const update = async (id: number, payload: UpdateUserDTO): Promise<IUser> => {
